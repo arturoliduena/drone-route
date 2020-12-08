@@ -50,7 +50,7 @@ const getOutput = (startPoint, steps) => {
         return nextPosition;
     }
   }, startPosition);
-  return output
+  return output.join('')
 };
 
 const drones = (input) => {
@@ -67,13 +67,8 @@ const drones = (input) => {
       return [ ...outputs ];
     };
   }, [])
-  return result
+  return result.join(' ')
 };
 
-const test = drones('55 33E L 33E MMRMMRMRRM 12N LMLMLMLMMLMLMLMLMM');
-console.log({ test })
-/*Output: 
-3 3 N 
-5 1 E 
-1 4 N
-*/
+module.exports = drones;
+
