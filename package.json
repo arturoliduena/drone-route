@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node app.js",
     "test": "mocha"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "mocha": "^8.2.1"
+  },
+  "dependencies": {
+    "colors": "^1.4.0"
   }
 }
